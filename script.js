@@ -52,9 +52,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, observerOptions);
 
-    document.querySelectorAll('.pricing-card, .testimonial-card').forEach(el => {
+document.querySelectorAll('.pricing-card, .testimonial-card, .form-switch').forEach(el => {
         observer.observe(el);
     });
+
 
     const heroMockup = document.querySelector('.hero-mockup');
     heroMockup.addEventListener('mouseenter', function() {

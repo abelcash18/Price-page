@@ -89,7 +89,9 @@ body {
 .animate-slide-up {
     opacity: 0;
     animation: slideUp 0.8s ease forwards;
+    animation-play-state: paused;
 }
+
 
 .animate-float {
     animation: float 6s ease-in-out infinite;
