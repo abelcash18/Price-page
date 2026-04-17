@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         priceToggleText.textContent = isMonthly ? 'One-time' : 'Custom';
         
         document.getElementById('basic-price').textContent = isMonthly ? '#100k' : '#20k';
-        document.getElementById('basic-period').textContent = isMonthly ? 'one-time' : '/mo';
+        document.getElementById('basic-period').textContent = isMonthly ? 'one-time' : '/wk';
         
         document.getElementById('standard-price').textContent = isMonthly ? '#270k' : '#45k';
         document.getElementById('standard-period').textContent = isMonthly ? 'one-time' : '/mo';
