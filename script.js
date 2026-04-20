@@ -29,13 +29,13 @@ document.addEventListener('DOMContentLoaded', function() {
         
         priceToggleText.textContent = isMonthly ? 'One-time' : 'Custom';
         
-        document.getElementById('basic-price').textContent = isMonthly ? '#100k' : '#20k';
+        document.getElementById('basic-price').textContent = isMonthly ? '#150k' : '#50k';
         document.getElementById('basic-period').textContent = isMonthly ? 'one-time' : '/wk';
         
-        document.getElementById('standard-price').textContent = isMonthly ? '#270k' : '#45k';
+        document.getElementById('standard-price').textContent = isMonthly ? '#370k' : '#75k';
         document.getElementById('standard-period').textContent = isMonthly ? 'one-time' : '/mo';
         
-        document.getElementById('premium-price').textContent = isMonthly ? '#550k' : '#65k';
+        document.getElementById('premium-price').textContent = isMonthly ? '#750k' : '#165k';
         document.getElementById('premium-period').textContent = isMonthly ? 'custom quote' : '/mo';
     });
 
