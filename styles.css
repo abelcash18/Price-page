@@ -3,6 +3,25 @@
     --secondary-color: #764ba2;
     --dark-color: #1a1a2e;
     --light-bg: #f8f9ff;
+    --text-primary: #1f2937;
+    --text-secondary: #6b7280;
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8fafc;
+    --border-color: rgba(0,0,0,0.1);
+    --shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+html[data-theme="dark"] {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: var(--shadow);
 }
 
 * {
@@ -13,13 +32,27 @@
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-variation-settings: "wght" 400;
     line-height: 1.7;
     scroll-behavior: smooth;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6, .display-*, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-variation-settings: "wght" 700;
+    font-weight: 700;
 }
 
 .navbar {
     transition: all 0.3s ease;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.navbar {
+    @extend .glass; 
 }
 
 .navbar.scrolled {
@@ -98,6 +131,7 @@ body {
 }
 
 .pricing-card {
+    @extend .glass;
     border-radius: 20px;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
@@ -118,18 +152,48 @@ body {
 
 .price-section h2 {
     font-weight: 900;
-    font-size: 3.5rem;
+    font-size: clamp(2.5rem, 8vw, 4rem);
     line-height: 1;
+}
+
+.form-switch {
+    --bs-form-switch-bg: var(--bg-secondary);
+    --bs-form-switch-color: var(--primary-color);
 }
 
 .form-switch input:checked + .form-check-label {
     color: var(--primary-color);
+    text-shadow: 0 0 10px rgba(102, 126, 234, 0.5);
+}
+
+.form-switch .form-check-input {
+    width: 3rem;
+    height: 1.5rem;
+    background-color: var(--bg-secondary);
+    border: 2px solid var(--border-color);
+    box-shadow: var(--shadow);
+}
+
+.form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(102, 126, 234, 0.25), var(--shadow);
 }
 
 .table {
+    @extend .glass;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    box-shadow: var(--shadow);
+}
+
+.table {
+    background: rgba(255,255,255,0.05);
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .table {
+    background: rgba(0,0,0,0.3);
 }
 
 .table th {
@@ -154,8 +218,7 @@ body {
 }
 
 .testimonial-card {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(20px);
+    @extend .glass;
     border-radius: 20px;
     transition: all 0.4s ease;
 }
@@ -184,15 +247,17 @@ footer {
 
 @media (max-width: 768px) {
     .hero h1 {
-        font-size: 2.5rem;
-    }
-    
-    .price-section h2 {
-        font-size: 2.5rem;
+        font-size: clamp(2rem, 8vw, 3rem);
     }
     
     .navbar-brand {
-        font-size: 1.5rem;
+        font-size: clamp(1.25rem, 6vw, 1.75rem);
+    }
+
+    @container (max-width: 400px) {
+        .pricing-card .card-body {
+            padding: 1.5rem;
+        }
     }
 }
 

@@ -21,23 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    const priceToggle = document.getElementById('priceToggle');
-    const priceToggleText = document.getElementById('priceToggleText');
-    
-    priceToggle.addEventListener('change', function() {
-        const isMonthly = this.checked;
-        
-        priceToggleText.textContent = isMonthly ? 'One-time' : 'Custom';
-        
-        document.getElementById('basic-price').textContent = isMonthly ? '#150k' : '#50k';
-        document.getElementById('basic-period').textContent = isMonthly ? 'one-time' : '/wk';
-        
-        document.getElementById('standard-price').textContent = isMonthly ? '#370k' : '#75k';
-        document.getElementById('standard-period').textContent = isMonthly ? 'one-time' : '/mo';
-        
-        document.getElementById('premium-price').textContent = isMonthly ? '#750k' : '#165k';
-        document.getElementById('premium-period').textContent = isMonthly ? 'custom quote' : '/mo';
-    });
+
 
     const observerOptions = {
         threshold: 0.1,
@@ -52,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, observerOptions);
 
-document.querySelectorAll('.pricing-card, .testimonial-card, .form-switch').forEach(el => {
+document.querySelectorAll('.pricing-card, .testimonial-card').forEach(el => {
         observer.observe(el);
     });
 
@@ -130,5 +114,11 @@ document.querySelectorAll('.pricing-card, .testimonial-card, .form-switch').forE
         });
     });
 
-    console.log('Abeltech Solutions landing page loaded successfully! 🚀');
+            if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./sw.js')
+            .then(reg => console.log('SW registered'))
+            .catch(err => console.log('SW registration failed'));
+    }
+    
+    console.log('AbelTech Solutions modern pricing page loaded! 🌟 Dark mode & PWA ready.');
 });
