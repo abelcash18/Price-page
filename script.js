@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+<<<<<<< HEAD
     const priceToggle = document.getElementById('priceToggle');
     const priceToggleText = document.getElementById('priceToggleText');
     
@@ -60,6 +61,9 @@ document.addEventListener('DOMContentLoaded', function() {
             setTimeout(() => h2.style.opacity = '1', 150);
         });
     });
+=======
+
+>>>>>>> 0150d0b01e6b27a936eaf14cbe033ee7b718839a
 
     const observerOptions = {
         threshold: 0.1,
@@ -74,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, observerOptions);
 
-document.querySelectorAll('.pricing-card, .testimonial-card, .form-switch').forEach(el => {
+document.querySelectorAll('.pricing-card, .testimonial-card').forEach(el => {
         observer.observe(el);
     });
 
