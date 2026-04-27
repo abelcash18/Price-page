@@ -24,19 +24,41 @@ document.addEventListener('DOMContentLoaded', function() {
     const priceToggle = document.getElementById('priceToggle');
     const priceToggleText = document.getElementById('priceToggleText');
     
+    const annualPrices = { basic: 150000, standard: 370000, premium: 750000 };
+    const monthlyPrices = { basic: Math.round(annualPrices.basic / 12), standard: Math.round(annualPrices.standard / 12), premium: Math.round(annualPrices.premium / 12) };
+    const savingsPercent = 5; 
+    
+    function formatPrice(price) {
+        return '₦' + price.toLocaleString();
+    }
+    
+    function updatePricing(isAnnual) {
+        const prices = isAnnual ? annualPrices : monthlyPrices;
+        const period = isAnnual ? '/year' : '/month';
+        const savingsText = isAnnual ? ` <small class="badge bg-success ms-2">Save ${savingsPercent}%</small>` : '';
+        
+        priceToggleText.innerHTML = isAnnual ? 'Annual' + savingsText : 'Monthly';
+        
+        document.getElementById('basic-price').innerHTML = formatPrice(prices.basic) + (isAnnual ? '<small class="text-muted d-block">/year</small>' : '<small class="text-muted d-block">/month</small>');
+        document.getElementById('basic-period').textContent = period;
+        
+        document.getElementById('standard-price').innerHTML = formatPrice(prices.standard) + (isAnnual ? '<small class="text-muted d-block">/year</small>' : '<small class="text-muted d-block">/month</small>');
+        document.getElementById('standard-period').textContent = period;
+        
+        document.getElementById('premium-price').innerHTML = formatPrice(prices.premium) + (isAnnual ? '<small class="text-muted d-block">/year</small>' : '<small class="text-muted d-block">/month</small>');
+        document.getElementById('premium-period').textContent = isAnnual ? '/year (custom quote available)' : '/month';
+    }
+    
+    updatePricing(true);
+    
     priceToggle.addEventListener('change', function() {
-        const isMonthly = this.checked;
+        updatePricing(this.checked);
         
-        priceToggleText.textContent = isMonthly ? 'One-time' : 'Custom';
-        
-        document.getElementById('basic-price').textContent = isMonthly ? '#150k' : '#50k';
-        document.getElementById('basic-period').textContent = isMonthly ? 'one-time' : '/wk';
-        
-        document.getElementById('standard-price').textContent = isMonthly ? '#370k' : '#75k';
-        document.getElementById('standard-period').textContent = isMonthly ? 'one-time' : '/mo';
-        
-        document.getElementById('premium-price').textContent = isMonthly ? '#750k' : '#165k';
-        document.getElementById('premium-period').textContent = isMonthly ? 'custom quote' : '/mo';
+        document.querySelectorAll('.price-section h2').forEach(h2 => {
+            h2.style.transition = 'opacity 0.3s ease';
+            h2.style.opacity = '0.5';
+            setTimeout(() => h2.style.opacity = '1', 150);
+        });
     });
 
     const observerOptions = {
@@ -130,5 +152,11 @@ document.querySelectorAll('.pricing-card, .testimonial-card, .form-switch').forE
         });
     });
 
-    console.log('Abeltech Solutions landing page loaded successfully! 🚀');
+            if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./sw.js')
+            .then(reg => console.log('SW registered'))
+            .catch(err => console.log('SW registration failed'));
+    }
+    
+    console.log('AbelTech Solutions modern pricing page loaded! 🌟 Dark mode & PWA ready.');
 });
