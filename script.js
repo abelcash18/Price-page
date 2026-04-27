@@ -21,49 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-<<<<<<< HEAD
-    const priceToggle = document.getElementById('priceToggle');
-    const priceToggleText = document.getElementById('priceToggleText');
-    
-    const annualPrices = { basic: 150000, standard: 370000, premium: 750000 };
-    const monthlyPrices = { basic: Math.round(annualPrices.basic / 12), standard: Math.round(annualPrices.standard / 12), premium: Math.round(annualPrices.premium / 12) };
-    const savingsPercent = 5; 
-    
-    function formatPrice(price) {
-        return '₦' + price.toLocaleString();
-    }
-    
-    function updatePricing(isAnnual) {
-        const prices = isAnnual ? annualPrices : monthlyPrices;
-        const period = isAnnual ? '/year' : '/month';
-        const savingsText = isAnnual ? ` <small class="badge bg-success ms-2">Save ${savingsPercent}%</small>` : '';
-        
-        priceToggleText.innerHTML = isAnnual ? 'Annual' + savingsText : 'Monthly';
-        
-        document.getElementById('basic-price').innerHTML = formatPrice(prices.basic) + (isAnnual ? '<small class="text-muted d-block">/year</small>' : '<small class="text-muted d-block">/month</small>');
-        document.getElementById('basic-period').textContent = period;
-        
-        document.getElementById('standard-price').innerHTML = formatPrice(prices.standard) + (isAnnual ? '<small class="text-muted d-block">/year</small>' : '<small class="text-muted d-block">/month</small>');
-        document.getElementById('standard-period').textContent = period;
-        
-        document.getElementById('premium-price').innerHTML = formatPrice(prices.premium) + (isAnnual ? '<small class="text-muted d-block">/year</small>' : '<small class="text-muted d-block">/month</small>');
-        document.getElementById('premium-period').textContent = isAnnual ? '/year (custom quote available)' : '/month';
-    }
-    
-    updatePricing(true);
-    
-    priceToggle.addEventListener('change', function() {
-        updatePricing(this.checked);
-        
-        document.querySelectorAll('.price-section h2').forEach(h2 => {
-            h2.style.transition = 'opacity 0.3s ease';
-            h2.style.opacity = '0.5';
-            setTimeout(() => h2.style.opacity = '1', 150);
-        });
-    });
-=======
-
->>>>>>> 0150d0b01e6b27a936eaf14cbe033ee7b718839a
 
     const observerOptions = {
         threshold: 0.1,
