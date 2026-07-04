@@ -3,22 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AbelTech Solutions -Professional Website Pricing</title>
-     <link rel="icon" href="favicon.png">
+    <title>AbelTech Solutions - Professional Website Pricing</title>
+    <!-- Favicons -->
+    <link rel="icon" href="favicon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="180x180" href="apple-touch-icon.png">
+    <!-- Third-Party Stylesheets -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <!-- Custom Stylesheet -->
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Navbar Section -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark shadow-lg">
         <div class="container">
-            <a class="navbar-brand fw-bold fs-3" href="#home">
-              AbelTech Solutions</a>
-                       <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+            <a class="navbar-brand fw-bold fs-3" href="#home">AbelTech Solutions</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item">
                         <a class="nav-link" href="#pricing">Pricing</a>
                     </li>
@@ -31,116 +38,118 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
-                    <li class="nav-item ms-2">
-                        <a class="btn btn-primary btn-sm" href="#pricing">Get Quote</a>
+                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                        <a class="btn btn-primary btn-sm px-3" href="#pricing">Get Quote</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section class="hero min-vh-100 d-flex align-items-center text-white" id="home">
-        <div class="container">
-            <div class="row align-items-center">
+    <!-- Hero Section -->
+    <section class="hero min-vh-100 d-flex align-items-center text-white bg-dark" id="home">
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
                 <div class="col-lg-6">
                     <h1 class="display-4 fw-bold mb-4 animate-fade-in">
-                        Professional Websites That<br>
-                       Convert Visitors 
-                        <br>Into Customers<br/>
+                        Professional Websites That Convert Visitors Into Customers
                     </h1>
-                    <p class="lead mb-4">
-                        Choose from our flexible pricing plans. All websites are fully responsive, SEO optimized,
-                        and built with modern technologies:-
-                        <b> Hmtl,Css,Javascript,Bootstrap,React,Nextjs </b>.
+                    <p class="lead mb-4 text-white-50">
+                        Choose from our flexible pricing plans. All websites are fully responsive, SEO optimized, and built with modern technologies: 
+                        <span class="text-white fw-bold">HTML5, CSS3, JavaScript, Bootstrap, React, and Next.js</span>.
                     </p>
-                    <div class="d-flex flex-column flex-lg-row gap-3">
-                        <a href="#pricing" class="btn btn-primary btn-lg px-5 py-3 shadow-lg">
+                    <div class="d-flex flex-column flex-sm-row gap-3">
+                        <a href="#pricing" class="btn btn-primary btn-lg px-4 py-3 shadow">
                             <i class="fas fa-rocket me-2"></i>View Pricing
                         </a>
-                        <a href="#contact" class="btn btn-outline-light btn-lg px-5 py-3">
+                        <a href="#contact" class="btn btn-outline-light btn-lg px-4 py-3">
                             <i class="fas fa-phone me-2"></i>Free Consultation
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-6 text-center mt-5 mt-lg-0">
+                <div class="col-lg-6 text-center">
                     <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                    alt="Website Mockup" class="img-fluid hero-mockup shadow-lg animate-float">
+                         alt="Website Mockup" class="img-fluid hero-mockup rounded-3 shadow-lg animate-float">
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Pricing Section -->
     <section class="py-5 bg-light" id="pricing">
-        <div class="container">
+        <div class="container py-4">
             <div class="text-center mb-5">
-                <h2 class="display-3 fw-bold mb-3">Simple, Transparent Pricing</h2>
-                <p class="lead text-muted mb-0">Choose the perfect plan for your business needs</p>
+                <h2 class="display-4 fw-bold mb-3">Simple, Transparent Pricing</h2>
+                <p class="lead text-muted">Choose the perfect plan for your business needs</p>
             </div>
 
             <div class="row g-4 justify-content-center">
+                <!-- Basic Plan -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="card pricing-card h-100 border-0 shadow-lg animate-slide-up">
-<div class="card-body text-center p-5">
-                            <div class="badge bg-primary mb-3">Most Popular</div>
-
-                            <h3 class="card-title h4 mb-4">Basic Website</h3>
+                    <div class="card pricing-card h-100 border-0 shadow-sm animate-slide-up">
+                        <div class="card-body text-center p-5">
+                            <div class="badge bg-secondary-subtle text-secondary mb-3 px-3 py-2 rounded-pill">Standard</div>
+                            <h3 class="card-title h4 mb-4 fw-bold">Basic Website</h3>
                             <div class="price-section mb-4">
-                                <h2 class="display-4 fw-bold text-primary mb-0">#150k</h2>
-                                <div class="text-muted small">one-time</div>
+                                <h2 class="display-5 fw-bold text-primary mb-0">₦150,000</h2>
+                                <div class="text-muted small">one-time payment</div>
                             </div>
-                            <ul class="list-unstyled mb-4">
-                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>5 Pages</li>
+                            <ul class="list-unstyled mb-4 text-start mx-auto" style="max-width: 200px;">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>5 Custom Pages</li>
                                 <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Responsive Design</li>
                                 <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Contact Form</li>
                                 <li class="mb-2"><i class="fas fa-check text-success me-2"></i>SEO Optimization</li>
                                 <li class="mb-2"><i class="fas fa-check text-success me-2"></i>1 Month Support</li>
                             </ul>
-                            <a href="#contact" class="btn btn-primary w-100 py-3 fs-5">Choose Basic</a>
+                            <a href="#contact" class="btn btn-outline-primary w-100 py-2 fs-5 mt-auto">Choose Basic</a>
                         </div>
                     </div>
                 </div>
 
+                <!-- eCommerce Plan -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="card pricing-card h-100 border-0 shadow-xl animate-slide-up" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
-                        <div class="card-body text-center p-5 position-relative">
-                            <div class="position-absolute top-0 start-50 translate-middle-x mt-n3">
-                                <div class="badge bg-white text-primary px-4 py-2 fs-6 fw-bold shadow">Recommended</div>
+                    <div class="card pricing-card h-100 border-0 shadow-lg animate-slide-up position-relative text-white" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <div class="card-body text-center p-5 d-flex flex-column">
+                            <div class="position-absolute top-0 start-50 translate-middle mt-2">
+                                <span class="badge bg-white text-primary px-4 py-2 fs-6 fw-bold shadow-sm rounded-pill">Recommended</span>
                             </div>
-                            <h3 class="card-title h3 mb-4">eCommerce Store</h3>
+                            <h3 class="card-title h3 mb-4 fw-bold mt-2">eCommerce Store</h3>
                             <div class="price-section mb-4">
-                                <h2 class="display-4 fw-bold mb-0">#370k</h2>
-                                <div class="small fw-light">one-time</div>
+                                <h2 class="display-5 fw-bold mb-0">₦370,000</h2>
+                                <div class="small fw-light text-white-50">one-time payment</div>
                             </div>
-                            <ul class="list-unstyled mb-4">
-                                <li class="mb-2"><i class="fas fa-check me-2"></i>15 Pages</li>
-                                <li class="mb-2"><i class="fas fa-check me-2"></i>Online Store</li>
+                            <ul class="list-unstyled mb-4 text-start mx-auto" style="max-width: 200px;">
+                                <li class="mb-2"><i class="fas fa-check me-2"></i>15 Custom Pages</li>
+                                <li class="mb-2"><i class="fas fa-check me-2"></i>Online Store Setup</li>
                                 <li class="mb-2"><i class="fas fa-check me-2"></i>Payment Integration</li>
                                 <li class="mb-2"><i class="fas fa-check me-2"></i>Advanced SEO</li>
                                 <li class="mb-2"><i class="fas fa-check me-2"></i>6 Months Support</li>
                                 <li class="mb-2"><i class="fas fa-check me-2"></i>Analytics Setup</li>
                             </ul>
-                            <a href="#contact" class="btn btn-light w-100 py-3 fs-5 fw-bold">Choose eCommerce</a>
+                            <a href="#contact" class="btn btn-light w-100 py-2 fs-5 fw-bold mt-auto text-primary shadow">Choose eCommerce</a>
                         </div>
                     </div>
                 </div>
 
+                <!-- Enterprise Plan -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="card pricing-card h-100 border-0 shadow-lg animate-slide-up">
+                    <div class="card pricing-card h-100 border-0 shadow-sm animate-slide-up">
                         <div class="card-body text-center p-5">
-                            <h3 class="card-title h4 mb-4">Custom Enterprise</h3>
+                            <div class="badge bg-primary-subtle text-primary mb-3 px-3 py-2 rounded-pill">Premium</div>
+                            <h3 class="card-title h4 mb-4 fw-bold">Custom Enterprise</h3>
                             <div class="price-section mb-4">
-                                <h2 class="display-4 fw-bold text-primary mb-0">#750k</h2>
+                                <h2 class="display-5 fw-bold text-primary mb-0">₦750,000+</h2>
                                 <div class="text-muted small">custom quote</div>
                             </div>
-                            <ul class="list-unstyled mb-4">
+                            <ul class="list-unstyled mb-4 text-start mx-auto" style="max-width: 220px;">
                                 <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Unlimited Pages</li>
                                 <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Custom Features</li>
-                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>API Integration</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>API Integrations</li>
                                 <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Advanced Security</li>
                                 <li class="mb-2"><i class="fas fa-check text-success me-2"></i>12+ Months Support</li>
                                 <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Performance Optimization</li>
                             </ul>
-                            <a href="#contact" class="btn btn-outline-primary w-100 py-3 fs-5 border-3">Get Custom Quote</a>
+                            <a href="#contact" class="btn btn-primary w-100 py-2 fs-5 mt-auto">Get Custom Quote</a>
                         </div>
                     </div>
                 </div>
@@ -148,49 +157,50 @@
         </div>
     </section>
 
+    <!-- Features Section -->
     <section class="py-5" id="features">
-        <div class="container">
+        <div class="container py-4">
             <div class="text-center mb-5">
                 <h2 class="display-5 fw-bold mb-3">Feature Comparison</h2>
                 <p class="lead text-muted">Everything you need to grow your online presence</p>
             </div>
-            <div class="table-responsive">
-                <table class="table table-hover table-bordered align-middle">
+            <div class="table-responsive shadow rounded-3">
+                <table class="table table-hover table-striped align-middle mb-0 text-center">
                     <thead class="table-dark">
                         <tr>
-                            <th></th>
-                            <th><i class="fas fa-crown text-warning"></i> Basic</th>
-                            <th><i class="fas fa-star text-warning"></i> eCommerce</th>
-                            <th><i class="fas fa-rocket text-primary"></i> Enterprise</th>
+                            <th class="text-start ps-4">Features</th>
+                            <th><i class="fas fa-crown text-warning me-2"></i>Basic</th>
+                            <th><i class="fas fa-star text-warning me-2"></i>eCommerce</th>
+                            <th><i class="fas fa-rocket text-primary me-2"></i>Enterprise</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>Number of Pages</strong></td>
-                            <td>5</td>
-                            <td>15</td>
+                            <td class="text-start ps-4"><strong>Number of Pages</strong></td>
+                            <td>5 Pages</td>
+                            <td>15 Pages</td>
                             <td>Unlimited</td>
                         </tr>
                         <tr>
-                            <td><strong>Responsive Design</strong></td>
-                            <td><i class="fas fa-check text-success"></i>Basic</td>
-                            <td><i class="fas fa-check text-success"></i>Advanced</td>
-                            <td><i class="fas fa-check text-success"></i>More Advanced</td>
+                            <td class="text-start ps-4"><strong>Responsive Mobile Design</strong></td>
+                            <td><i class="fas fa-check text-success fs-5"></i></td>
+                            <td><i class="fas fa-check text-success fs-5"></i></td>
+                            <td><i class="fas fa-check text-success fs-5"></i></td>
                         </tr>
                         <tr>
-                            <td><strong>eCommerce</strong></td>
-                            <td><i class="fas fa-times text-danger"></i>Basic</td>
-                            <td><i class="fas fa-check text-success"></i>Advanced</td>
-                            <td><i class="fas fa-check text-success"></i> More Advanced</td>
+                            <td class="text-start ps-4"><strong>eCommerce System</strong></td>
+                            <td><i class="fas fa-times text-danger fs-5"></i></td>
+                            <td><i class="fas fa-check text-success fs-5"></i></td>
+                            <td><i class="fas fa-check text-success fs-5"></i></td>
                         </tr>
                         <tr>
-                            <td><strong>SEO Optimization</strong></td>
-                            <td>Basic</td>
+                            <td class="text-start ps-4"><strong>SEO Optimization</strong></td>
+                            <td>Standard</td>
                             <td>Advanced</td>
-                            <td>Enterprise</td>
+                            <td>Enterprise Grade</td>
                         </tr>
                         <tr>
-                            <td><strong>Support Duration</strong></td>
+                            <td class="text-start ps-4"><strong>Support Duration</strong></td>
                             <td>1 Month</td>
                             <td>6 Months</td>
                             <td>12+ Months</td>
@@ -201,69 +211,55 @@
         </div>
     </section>
 
-    <section class="py-5 bg-gradient" id="testimonials">
-        <div class="container">
+    <!-- Testimonials Section -->
+    <section class="py-5 bg-secondary bg-opacity-10" id="testimonials">
+        <div class="container py-4">
             <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold text-white mb-3">What Our Clients Say</h2>
-                <p class="lead text-white-50">Join 500+ happy customers</p>
+                <h2 class="display-5 fw-bold mb-3">What Our Clients Say</h2>
+                <p class="lead text-muted">Join over 500+ happy clients globally</p>
             </div>
             <div class="row g-4">
+                <!-- Testimonial 1 -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="card h-100 border-0 shadow-lg testimonial-card animate-slide-up">
-                        <div class="card-body p-5 text-center">
-                            <div class="mb-4">
-                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&w=150&h=150&fit=crop&crop=face" 
-                                alt="Client" class="rounded-circle shadow-lg mb-3" width="80" height="80">
-                            </div>
-                            <p class="lead mb-4">"AbelTech Solutions delivered our site 2 weeks early with amazing results. Our sales increased 300%!"</p>
-                            <h5 class="fw-bold">Sarah Johnson</h5>
-                            <p class="text-muted mb-0">CEO, Tech Startup</p>
-                            <div class="stars mt-3">
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
+                    <div class="card h-100 border-0 shadow-sm p-4 text-center">
+                        <div class="card-body">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&w=150&h=150&fit=crop&crop=face" 
+                                 alt="Sarah Johnson" class="rounded-circle shadow mb-3" width="80" height="80">
+                            <p class="fst-italic text-muted mb-4">"AbelTech Solutions delivered our site 2 weeks early with amazing results. Our sales increased 300%!"</p>
+                            <h5 class="fw-bold mb-0">Sarah Johnson</h5>
+                            <small class="text-primary">CEO, Tech Startup</small>
+                            <div class="stars mt-2 text-warning">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- Testimonial 2 -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="card h-100 border-0 shadow-lg testimonial-card animate-slide-up" style="animation-delay: 0.1s;">
-                        <div class="card-body p-5 text-center">
-                            <div class="mb-4">
-                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&w=150&h=150&fit=crop&crop=face" 
-                                alt="Client" class="rounded-circle shadow-lg mb-3" width="80" height="80">
-                            </div>
-                            <p class="lead mb-4">"Exceptional service and quality. Our eCommerce store is now converting like crazy!"</p>
-                            <h5 class="fw-bold">Mike Chen</h5>
-                            <p class="text-muted mb-0">Founder, Online Store</p>
-                            <div class="stars mt-3">
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
+                    <div class="card h-100 border-0 shadow-sm p-4 text-center">
+                        <div class="card-body">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&w=150&h=150&fit=crop&crop=face" 
+                                 alt="Mike Chen" class="rounded-circle shadow mb-3" width="80" height="80">
+                            <p class="fst-italic text-muted mb-4">"Exceptional service and quality. Our eCommerce store is now converting like crazy!"</p>
+                            <h5 class="fw-bold mb-0">Mike Chen</h5>
+                            <small class="text-primary">Founder, Online Store</small>
+                            <div class="stars mt-2 text-warning">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- Testimonial 3 -->
                 <div class="col-lg-4 col-md-6">
-                    <div class="card h-100 border-0 shadow-lg testimonial-card animate-slide-up" style="animation-delay: 0.2s;">
-                        <div class="card-body p-5 text-center">
-                            <div class="mb-4">
-                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&w=150&h=150&fit=crop&crop=face"
-                                 alt="Client" class="rounded-circle shadow-lg mb-3" width="80" height="80">
-                            </div>
-                            <p class="lead mb-4">"Professional team with great communication. Highly recommend for any business!"</p>
-                            <h5 class="fw-bold">Emma Wilson</h5>
-                            <p class="text-muted mb-0">Marketing Director</p>
-                            <div class="stars mt-3">
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
-                                <i class="fas fa-star text-warning"></i>
+                    <div class="card h-100 border-0 shadow-sm p-4 text-center">
+                        <div class="card-body">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&w=150&h=150&fit=crop&crop=face"
+                                 alt="Emma Wilson" class="rounded-circle shadow mb-3" width="80" height="80">
+                            <p class="fst-italic text-muted mb-4">"Professional team with great communication. Highly recommend for any business!"</p>
+                            <h5 class="fw-bold mb-0">Emma Wilson</h5>
+                            <small class="text-primary">Marketing Director</small>
+                            <div class="stars mt-2 text-warning">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                             </div>
                         </div>
                     </div>
@@ -272,56 +268,53 @@
         </div>
     </section>
 
-    <section class="py-5 bg-dark text-white" id="contact">
-        <div class="container text-center">
-            <h2 class="display-4 fw-bold mb-4">Ready to Get Started?</h2>
-            <p class="lead mb-5">Get your free consultation and quote today</p>
+    <!-- Contact Section -->
+    <section class="py-5 bg-dark text-white shadow-inner" id="contact">
+        <div class="container text-center py-4">
+            <h2 class="display-4 fw-bold mb-3">Ready to Get Started?</h2>
+            <p class="lead text-white-50 mb-5">Get your free consultation and quote today</p>
             <div class="row justify-content-center g-4">
-                <div class="col-lg-4 col-md-6">
-                    <a href="tel:+2349056424816" class="text-decoration-none">
-                        <div class="card border-0 bg-transparent h-100">
-                            <div class="card-body p-4 text-center">
-                                <i class="fas fa-phone fa-2x text-primary mb-3"></i>
-                                <h5 class="mb-2">Call Us</h5>
-                                <p class="mb-0 fs-5 fw-bold text-primary">+234-905-642-4816</p>
-                            </div>
+                <div class="col-md-5 col-lg-4">
+                    <a href="tel:+2349056424816" class="text-decoration-none card border-0 bg-secondary bg-opacity-25 h-100 transition-up">
+                        <div class="card-body p-4 text-center text-white">
+                            <i class="fas fa-phone fa-2x text-primary mb-3"></i>
+                            <h5 class="mb-2">Call Us</h5>
+                            <p class="mb-0 fs-5 fw-bold text-primary">+234-905-642-4816</p>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <a href="mailto:josephabel540@gmail.com" class="text-decoration-none">
-                        <div class="card border-0 bg-transparent h-100">
-                            <div class="card-body p-4 text-center">
-                                <i class="fas fa-envelope fa-2x text-primary mb-3"></i>
-                                <h5 class="mb-2">Email Us</h5>
-                                <p class="mb-0 fs-5 fw-bold text-primary">josephabel540@gmail.com</p>
-                            </div>
+                <div class="col-md-5 col-lg-4">
+                    <a href="mailto:josephabel540@gmail.com" class="text-decoration-none card border-0 bg-secondary bg-opacity-25 h-100 transition-up">
+                        <div class="card-body p-4 text-center text-white">
+                            <i class="fas fa-envelope fa-2x text-primary mb-3"></i>
+                            <h5 class="mb-2">Email Us</h5>
+                            <p class="mb-0 fs-5 fw-bold text-primary">josephabel540@gmail.com</p>
                         </div>
                     </a>
                 </div>
-               </div>
+            </div>
         </div>
     </section>
 
-
-
-    <footer class="bg-black text-white py-4">
+    <!-- Footer Section -->
+    <footer class="bg-black text-white py-4 border-top border-secondary border-opacity-25">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h6 class="fw-bold"> AbelTech Solutions</h6>
-                    <p class="small mb-0">© 2026 AbelTech Solutions. All rights reserved.</p>
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <h6 class="fw-bold mb-1">AbelTech Solutions</h6>
+                    <p class="small text-muted mb-0">© 2026 AbelTech Solutions. All rights reserved.</p>
                 </div>
-                <div class="col-md-6 text-md-end">
-                    <a href="https://facebook.com/JosephAbel" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://twitter.com/JosephAlfredca2" class="text-white me-3"><i class="fab fa-twitter"></i></a>
-                    <a href="https://linkedin.com/in/JosephAbel" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/abelcash18" class="text-white"><i class="fab fa-github"></i></a>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="https://facebook.com/JosephAbel" target="_blank" rel="noopener" class="text-white-50 hover-white me-3"><i class="fab fa-facebook-f fs-5"></i></a>
+                    <a href="https://twitter.com/JosephAlfredca2" target="_blank" rel="noopener" class="text-white-50 hover-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="https://linkedin.com/in/JosephAbel" target="_blank" rel="noopener" class="text-white-50 hover-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/abelcash18" target="_blank" rel="noopener" class="text-white-50 hover-white"><i class="fab fa-github"></i></a>
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
